@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+
+
+.section {
+    font-family: "Montserrat", serif;
+    margin: 0 auto;
+    display: flex; /* Включаем флексбокс */
+    align-items: center; /* Центровка по вертикали */
+    justify-content: center; /* Центровка по горизонтали */
+    padding: 0; /* Убираем внутренние отступы у секции */
+    border-bottom: 1px solid #E6E6E6; /* Нижняя граница */
+    position: relative; /* Для абсолютного позиционирования логотипа */
+    height: 85px; /* Общая высота секции */
+}
+
+.logo {
+    display: flex;
+    width: 178px;
+    height: 37px;
+    position: absolute;
+    left: 135px; /* Фиксируем логотип слева */
+    top: 24px; /* Отступ сверху */
+    margin: 0; /* Убираем дополнительные отступы */
+}
+
+.text__header {
+    display: flex;
+    align-items: center; /* Центровка текста по вертикали */
+    gap: 24px; /* Расстояние между пунктами меню */
+    list-style: none; /* Убираем маркеры */
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    text-align: center;
+}
+
+.nav-list__item {
+    text-align: center; /* Центровка текста внутри каждого элемента */
+}
+
+.nav-list__link {
+    color: #000000;
+    text-decoration: none;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+}
+
+
+/* main */
+
+.main__Section {
+    display: flex; /* Включаем флексбокс */
+    align-items: center; /* Центровка по вертикали */
+    margin-top: 96px;
+    justify-content: space-between;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    margin-left: 135px;
+    gap: 24px; /* Расстояние между текстом и изображением */
+    
+}
+.img__main {
+    margin-right: 135px;
+}
+
+.small__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4E7BF2;
+    font-size: 14px;
+    width: 270px;
+    height: 29px;
+    border-radius: 10px;
+    background-color: #D7E0F5;
+    margin-bottom: 12px;
+}
+.text__main {
+    margin: 0;
+    font-size: 64px;
+    max-width: 700px;
+    height: 234px;
+    font-weight: 700;
+    
+}
+
+.text__main strong {
+    font-size: 64px;
+    color: #2362F8;
+}
+
+.p__text {
+    margin-top: 24px;
+    font-size: 24px;
+    width: 670px;
+    color: #666666;
+    margin-bottom: 48px;
+}
+
+.button__start {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #2362F8;
+    padding: 24px 48px;
+    border-radius: 10px;
+    margin-right: 48px;
+}
+
+.button__start:hover{
+    background-color: #1d52ce;
+    
+}
+.button__ip {
+    text-decoration: none;
+    color: #2362F8;
+    background-color: transparent;
+    outline: #2362F8 solid 2px;
+    padding: 24px 48px;
+    border-radius: 10px;
+}
+
+.button__ip:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2362F8;
+    padding: 24px 48px;
+    border-radius: 10px;
+}
