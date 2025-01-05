@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
 
+html {
+    font-family: "Montserrat", serif;
+}
 
 
 .section {
     font-family: "Montserrat", serif;
     margin: 0 auto;
-    display: flex; /* Включаем флексбокс */
+    display: flex; 
     align-items: center; /* Центровка по вертикали */
-    justify-content: center; /* Центровка по горизонтали */
-    padding: 0; /* Убираем внутренние отступы у секции */
-    border-bottom: 1px solid #E6E6E6; /* Нижняя граница */
-    position: relative; /* Для абсолютного позиционирования логотипа */
+    justify-content: center; 
+    padding: 0; 
+    border-bottom: 1px solid #E6E6E6;
+    position: relative; 
     height: 85px; /* Общая высота секции */
 }
 
@@ -19,23 +22,23 @@
     width: 178px;
     height: 37px;
     position: absolute;
-    left: 135px; /* Фиксируем логотип слева */
-    top: 24px; /* Отступ сверху */
-    margin: 0; /* Убираем дополнительные отступы */
+    left: 135px; 
+    top: 24px; 
+    margin: 0; 
 }
 
 .text__header {
     display: flex;
-    align-items: center; /* Центровка текста по вертикали */
-    gap: 24px; /* Расстояние между пунктами меню */
-    list-style: none; /* Убираем маркеры */
-    margin: 0; /* Убираем внешние отступы */
-    padding: 0; /* Убираем внутренние отступы */
+    align-items: center; 
+    gap: 24px;
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
     text-align: center;
 }
 
 .nav-list__item {
-    text-align: center; /* Центровка текста внутри каждого элемента */
+    text-align: center; 
 }
 
 .nav-list__link {
@@ -44,19 +47,21 @@
     font-family: "Montserrat", serif;
     font-weight: 600;
 }
-
+.nav-list__link:hover {
+    color: #2362F8;
+}
 
 /* main */
 
 .main__Section {
-    display: flex; /* Включаем флексбокс */
-    align-items: center; /* Центровка по вертикали */
+    display: flex; 
+    align-items: center; 
     margin-top: 96px;
     justify-content: space-between;
     font-family: "Montserrat", serif;
     font-weight: 600;
     margin-left: 135px;
-    gap: 24px; /* Расстояние между текстом и изображением */
+    gap: 24px; 
     
 }
 .img__main {
@@ -125,4 +130,112 @@
     background-color: #2362F8;
     padding: 24px 48px;
     border-radius: 10px;
+}
+
+.tittle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 96px;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+.tittle strong {
+    color: #2362F8;
+}
+.colum__info {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-bottom: 96px;
+}
+.text__colum__header {
+    max-width: 600px; 
+    background-color: #F1F4FB;
+    border-radius: 15px;
+    outline: 2px solid #A5BEF9;
+    
+}
+.col__header__text {
+    margin-top: 24px;
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+    margin-left: 30px;
+  }
+  
+  .col__header__text img {
+    width: 36px;
+    height: 36px;
+    vertical-align: middle; 
+
+  }
+
+.col__header__text strong {
+    color: #2362F8;
+}
+.col__colum__p {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-right: 25px;
+    margin-bottom: 18px;
+    font-weight: 500;
+
+}
+.col__btn {
+    margin-bottom: 24px;
+    margin-left: 23px;
+    font-size: 18px;
+    border: none;
+    color: #2362F8;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+.col__btn:hover{
+    opacity: 0.8;
+}
+
+canvas {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    z-index: 9999; 
+    pointer-events: none; 
+}
+
+/* Добавляем класс для анимации всей страницы */
+body {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Анимация плавного появления */
+}
+
+/* Создаем анимацию плавного появления */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Анимация для всех элементов внутри main */
+main {
+    opacity: 0;
+    animation: fadeInContent 2s forwards 1s; /* Анимация появляется через 1 секунду */
+}
+
+@keyframes fadeInContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
